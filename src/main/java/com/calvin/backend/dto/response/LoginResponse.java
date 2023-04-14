@@ -1,13 +1,13 @@
 package com.calvin.backend.dto.response;
 
 
+import com.calvin.backend.infra.BaseResponse;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class LoginResponse {
+public class LoginResponse extends BaseResponse {
 
     private String token;
 }

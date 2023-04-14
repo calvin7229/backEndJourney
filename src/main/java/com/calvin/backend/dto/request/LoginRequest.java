@@ -1,4 +1,6 @@
 package com.calvin.backend.dto.request;
 
-public class LoginRequest {
+import com.calvin.backend.infra.BaseRequest;
+
+public class LoginRequest extends BaseRequest {
 }
