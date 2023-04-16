@@ -4,9 +4,10 @@ import com.calvin.backend.config.callback.BaseCallback;
 import com.calvin.backend.infra.BaseRequest;
 import com.calvin.backend.infra.BaseResponse;
 
-public class RequestServiceTemplate<C extends BaseCallback<T, K>, T extends BaseRequest, K extends BaseResponse> {
+public class RequestServiceTemplate{
 
-    public static <K,T> K runQuery(T request){
-        return null;
+    public <B extends BaseCallback<T, K>, T extends BaseRequest, K extends BaseResponse> K runQuery(B callback, T request) {
+        callback.validateRequest(request);
+        return callback.query();
     }
 }

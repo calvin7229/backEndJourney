@@ -1,18 +1,18 @@
 package com.calvin.backend.service;
 
-import com.calvin.backend.repository.CrendentialsRepository;
+import com.calvin.backend.repository.CredentialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class AuthService {
 
     @Autowired
-    CrendentialsRepository crendentialsRepository;
+    CredentialRepository credentialRepository;
 
-    private boolean register(){
+    public boolean register(){
         return true;
     }
 
-    private String login(){
+    public String login(){
         return "TEST";
     }
 }
