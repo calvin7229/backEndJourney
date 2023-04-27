@@ -1,4 +1,9 @@
 package com.calvin.backend.infra;
 
-public class BaseResponse {
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+public class BaseResponse implements Serializable {
 }
