@@ -11,8 +11,8 @@ public class LoginCallback implements BaseCallback<LoginRequest, LoginResponse> 
     AuthService authService;
     @Override
     public LoginResponse query() {
-        return authService.login();
+        return new LoginResponse("TEST");
     }
 
-    public static convert()
+    //public static convert()
 }
